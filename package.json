@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "express": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts nodemon",
+    "full": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts nodemon",
+    "generate:types": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts payload generate:types",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
